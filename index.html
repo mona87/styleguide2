@@ -5,21 +5,18 @@
     <meta charset="utf-8">
     <base target="_blank">
     <title> Styleguide</title>
-     <script type="text/javascript" src="http://localhost:48626/takana.js"></script>
+<!--      <script type="text/javascript" src="http://localhost:48626/takana.js"></script>
      <script type="text/javascript">
        takanaClient.run({host: 'localhost:48626'});
-     </script>
-    <!-- <link rel="icon" type="image/png" href="styleguide/structure/images/favicon.png"> -->
+     </script> -->
     <link href="assets/styles/structure.css" rel="stylesheet">
-  <!--   <link href="modules/1_introduction/introduction.css" rel="stylesheet"> -->
-    <link href="modules/2_colors/primary.css" rel="stylesheet">
+    <link href="assets/styles/editor.css" rel="stylesheet">
     <link href="modules/2_colors/colors.css" rel="stylesheet">
     <link href="modules/3_typography/typography.css" rel="stylesheet">
     <link href="modules/4_buttons/buttons.css" rel="stylesheet">
     <link href="modules/5_lists/lists.css" rel="stylesheet">
     <link href="modules/6_forms/forms.css" rel="stylesheet">
     <link href="modules/7_tables/tables.css" rel="stylesheet">
-<!--     <link href="modules/8_templates/templates.css" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -35,7 +32,7 @@
             <section id="colors" class="huge-module anchor clearfix">
                 <h2 class="huge-module__title">Colors</h2>
                 <p class="huge-module__paragraph">Huge have two main colors: Magenta and Black. Additional Blue might be found on slides or t-shirts.</p>
-                <ul class=" huge-list--unstyled list-colors">
+<!--                 <ul class=" huge-list--unstyled list-colors">
                     <li class="small-12 medium-2 column ">
                         <div class="color primary-color-one"></div>
             
@@ -52,26 +49,17 @@
                         <div class="color primary-color-four"></div>
                     
                     </li>
-                </ul>
+
+                </ul> -->
                 <section id="live-editor" class="anchor clearfix">
+               
            			
                  <div class="innerbox preview">
-                 	<iframe id="previewTarget" scrolling="no" height="100%">
-                 		<!DOCTYPE html>
-                 		<html>
-                 		<head>
-                 			 <meta charset="utf-8">
-                 		</head>
-                 		<body>
-                 		</body>
-                 		</html>
-                 	</iframe>
+                 	<iframe class="iframes" id="previewTarget" scrolling="no" height="100%" ></iframe>
                  </div>
-                  <button id="preview">Preview</button><br/>
-                 <div contenteditable class="innerbox css">CSS</div>
-                 <textarea class="innerbox html"></textarea>
-                
-              <button id="getSource">source</button>
+                  <button id="preview-change-color" class="preview">Preview</button>
+                 <div contenteditable id="color-preview" class="innerbox css"></div>
+                <code><div class="color primary-color-one snippet"></div></code>
             </section>
                  
             </section>
@@ -90,10 +78,19 @@
             </section>
             <section id="buttons" class="huge-module anchor clearfix">
                 <h2 class="huge-module__title">Buttons</h2>
-                <ul class="huge-list--unstyled">
+     <!--            <ul class="huge-list--unstyled">
                     <li><a href="#" class="snippet button black">Load more</a></li>
-                </ul>
+                </ul> -->
+                <section class="live-editor" class="anchor clearfix ">   
+                 <div id="innerbox preview" >
+                    <iframe class="iframes" id="button-preview-iframe" scrolling="no" height="100%" ></iframe>
+                 </div>
+                  <div contenteditable id="button-preview" class="css"></div>
+                  <button id="preview-change-button" class="preview">Preview</button><br/>
+                   <!-- <code><div class=" button black snippet"></div></code> -->
             </section>
+            </section>
+  
             <section id="lists" class="huge-module anchor clearfix">
                 <h2 class="huge-module__title">Lists</h2>
                 <h5 class="huge-module__title--small">Unordered</h5>
@@ -235,8 +232,10 @@
     <script src="structure/scripts/vendor/prism.js"></script>
     <script src="structure/scripts/vendor/tidy.js"></script>
     <script src="structure/scripts/iframe.js"></script>
+    <script src="structure/scripts/editor.js"></script>
  <!--    <script src="modules/1_introduction/introduction.js"></script> -->
-    <script src="modules/2_colors/colors.js"></script>
+
+    <!-- <script src="modules/2_colors/colors.js"></script> -->
     <!-- <script src="build/bundle.js"></script> -->
 
 
