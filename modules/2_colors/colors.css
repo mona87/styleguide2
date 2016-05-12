@@ -1,0 +1,62 @@
+#previewTarget{
+	height: 200px;
+	width: 100%;
+	border: none;
+
+}
+textarea,  .css{
+	width: 500px;
+	font-size: 13px;
+	background-color: #f5f2f0;
+	border: none;
+	font-family: 'Consolas','Monaco','Andale Mono',monospace;
+	margin-bottom: 10px;
+}
+.list-colors{
+	/*display: none;*/
+}
+.primary-color-one {
+    background-color: #ec008c
+}
+
+.primary-color-two {
+    background-color: #000
+}
+
+.primary-color-three {
+    background-color: gray
+}
+
+.primary-color-four {
+    background-color: #2fbbf9
+}
+
+#colors li {
+    position: relative;
+    padding: 0;
+    margin-bottom: 0.9375em
+}
+
+#colors li p {
+    position: absolute;
+    padding: 3px 13px;
+    color: #666;
+    background-color: #fff;
+    font-size: 12px;
+    bottom: 0;
+    left: 0.9375em
+}
+
+#colors li .color {
+    height: 120px;
+    margin-right: 0.9375em
+}
+
+#colors li:last-child {
+    margin-right: 0
+}
+
+input.colors {
+    width: 161px;
+    margin-top: 10px
+}
