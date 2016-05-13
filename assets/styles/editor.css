@@ -7,7 +7,10 @@
 
 .color-code{
     font-family: Consolas,Monaco,'Andale Mono',monospace;
-    font-size: 16px;
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 10px;
 }
 
 button.preview{
@@ -19,17 +22,41 @@ button.preview{
     font-size: 13px;
 }
 
+#button-preview-iframe{
+    height: 130px;
+}
+
 .test{
     height: 400px;
     width: 400px;
     border: 1px solid red;
 }
   .css, .html, .preview-box{
-	width: 500px;
+
 	font-size: 13px;
 	background-color: #f5f2f0;
 	border: none;
 	font-family: 'Consolas','Monaco','Andale Mono',monospace;
 	margin-bottom: 10px;
 
+}
+
+#form-preview-iframe{
+    height: 600px;
+}
+
+.language-markup{
+    font-size: 13px;
+}
+
+.live-editor{
+    margin-bottom: 20px;
+}
+
+#list-preview-iframe{
+    height: 350px;
+}
+
+.iframes {
+    height: 200px;
 }
