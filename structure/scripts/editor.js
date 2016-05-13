@@ -1,15 +1,15 @@
 	$(function() {
 
-var mysheet=document.styleSheets[1]
-var myrules=mysheet.cssRules? mysheet.cssRules: mysheet.rules
-console.log(myrules)
-for (i=0; i<myrules.length; i++){
-if(myrules[i].selectorText.toLowerCase()=="#colors"){ //find "a:hover" rule
-targetrule=myrules[i]
-console.log(targetrule);
-break;
-}
-}
+// var mysheet=document.styleSheets[1]
+// var myrules=mysheet.cssRules? mysheet.cssRules: mysheet.rules
+// console.log(myrules)
+// for (i=0; i<myrules.length; i++){
+// if(myrules[i].selectorText.toLowerCase()=="#colors"){ //find "a:hover" rule
+// targetrule=myrules[i]
+// console.log(targetrule);
+// break;
+// }
+// }
 
 
 // console.log( 'test ',document.styleSheets[1].rules);
